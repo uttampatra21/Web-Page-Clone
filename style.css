@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  position: relative;
+  background-image: url(/Assets/background-image.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#header {
+  padding: 1vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header ul {
+  display: flex;
+  gap: 15px;
+}
+
+#header ul li {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  opacity: 0.6;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#search a {
+  padding: 8px;
+  background-color: rgb(241, 54, 85);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#hero {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5vw;
+}
+
+#carloan{
+    position: absolute;
+    top: 6vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#left h1 {
+  font-size: 4vw;
+}
+#left p {
+  width: 50%;
+  padding-top: 1vw;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.button {
+  padding: 1vw 0;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.button a:nth-child(1) {
+  background-color: rgb(241, 54, 85);
+  color: #fff;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.button a:nth-child(2) {
+  border: 1px solid rgb(241, 54, 85);
+  color: rgb(241, 54, 85);
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.button a:nth-child(2):hover {
+  background-color: rgb(241, 54, 85);
+  color: #fff;
+  transition: .5s;
+}
+.contact {
+  padding-top: 3vw;
+}
+.contact img {
+  width: 20px;
+}
+
+#right {
+  height: 100%;
+  background-image: url(/Assets/hero-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.right-button a, #carloan a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-weight: 600;
+  color: black;
+  opacity: 0.6;
+}
